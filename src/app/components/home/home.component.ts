@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  private showError(message: string) {
+  showError(message: string) {
     this.snackBar.open(message, 'Close', {
       duration: 3000,
       horizontalPosition: 'right',
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  private extractHtmlContent(safeHtml: any): string {
+  extractHtmlContent(safeHtml: any): string {
     let content = safeHtml;
     // Loop to continuously unwrap the content if it's nested within multiple SafeHtml layers
     while (content && content.changingThisBreaksApplicationSecurity) {
