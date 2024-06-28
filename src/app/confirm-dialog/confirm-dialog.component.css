@@ -1,0 +1,9 @@
+.mat-dialog-actions {
+    display: flex !important;
+    justify-content: space-between !important; /* Adjusts space between buttons */
+    align-items: center !important;
+}
+
+.mat-dialog-actions button {
+    flex: 1;  /* Makes each button expand to fill the space */
+}

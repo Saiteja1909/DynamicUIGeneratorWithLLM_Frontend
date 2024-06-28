@@ -1,0 +1,127 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    /* gap: 8px;  Add space between the icon and the user name */
+}
+
+.logout-button {
+    margin-left: 15px;
+}
+
+mat-icon {
+    color: white; /* Adjust color if necessary */
+    margin-right: 8px;
+}
+
+h1 {
+    margin: 5px;
+}
+
+.content-area {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100% - 60px); /* Adjust based on header height */
+}
+
+.left-pane {
+    width: 250px; /* Fixed width for the sidebar */
+    overflow-y: auto; /* Enables scrolling */
+    border-right: 1px solid #ccc; /* Adds a subtle border */
+    padding: 10px; /* Space around items */
+}
+
+.mat-fab {
+    margin-bottom: 10px; /* Space below the button */
+}
+
+.right-pane {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables scrolling */
+    padding: 20px; /* Provides some spacing */
+}
+
+.mat-card {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;  /* Full width to align with other elements */
+    height: 80px;  /* Increased height for better usability */
+    padding: 8px;  /* Padding inside textarea for text indention */
+    border: 1px solid #ccc;  /* Adds a subtle border */
+    border-radius: 4px;  /* Rounds the corners of the textarea */
+}
+
+.right-pane .generate-button {
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-pane .save-button {
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-pane .button-spinner {
+    margin-right: 10px; /* Space between spinner and text */
+}
+
+.preview-area {
+    width: 100%;
+    padding: 20px;
+}
+  
+.preview-button {
+    margin-bottom: 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: left;  /* Center button horizontally */
+    margin-bottom: 10px;
+}
+
+.back-button {
+    background-color: black;
+    color: white;
+    /* padding: 8px 10px; */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    width: auto;  /* Ensure width is auto to fit content */
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+  
+.mat-card-content {
+    display: flex;
+    height: 100%;
+}
+
+.menu-icon {
+    color: black;
+}

@@ -1,0 +1,50 @@
+/* ui-generator.component.css */
+.ui-generator-container {
+    display: block;  /* Changed from flex to block for better flow in the page context */
+    padding: 20px;  /* Add padding for spacing inside the container */
+    background-color: #f0f0f0;  /* Light gray background, consider matching with the home page */
+    border-radius: 8px;  /* Optional: adds rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Optional: adds subtle shadow for depth */
+    margin: 20px auto;  /* Centers the container and adds vertical spacing */
+    width: 90%;  /* Adjust width to not span the full page width */
+    max-width: 800px;  /* Maximum width to maintain readability and aesthetics */
+}
+
+mat-card {
+    width: 100%;  /* Takes the full width of its container */
+    margin-top: 0;  /* Removed top margin as it's now internally spaced by container padding */
+}
+
+mat-label {
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+textarea {
+    width: 100%;  /* Full width to align with other elements */
+    height: 150px;  /* Increased height for better usability */
+    padding: 8px;  /* Padding inside textarea for text indention */
+    border: 1px solid #ccc;  /* Adds a subtle border */
+    border-radius: 4px;  /* Rounds the corners of the textarea */
+}
+
+.ui-generator-container .generate-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ui-generator-container .button-spinner {
+    margin-right: 10px; /* Space between spinner and text */
+}
+
+.ui-generator-container .generated-code-card {
+    margin-top: 20px; /* Adds space between the button and the card displaying the generated code */
+}
+
+/* ui-generator.component.css */
+.ui-generator-container .mat-spinner {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
